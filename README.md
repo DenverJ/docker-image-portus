@@ -1,10 +1,8 @@
 ## WAT
 
-This should offer a recent build of SUSE/portus for docker use. Source will not be modified or hacked and is cloned directly from [SUSE/portus](https://github.com/SUSE/Portus) during the build, so releases never getting delayed due to merge issues.
+This should offer a specific "stable" build of SUSE/portus for docker use. Source will not be modified or hacked and is cloned directly from [SUSE/portus](https://github.com/SUSE/Portus) during the build, so releases never getting delayed due to merge issues.
 
-This image is specifically designed to be configurable and also used in a rancher catalog like this one [catalog](https://github.com/EugenMayer/kontextwork-catalog/tree/master/templates/registry-slim)
-
-Docker images are published to [hub.docker.io](https://hub.docker.com/r/eugenmayer/portus/)
+Docker images are published to [hub.docker.io](https://hub.docker.com/r/denverj/portus/)
 
 ## Configuration
 ### registry
@@ -18,7 +16,7 @@ The registry is configured using ENV variables, even if not officially documente
 
 ## Releases
 
-For now, only planed to be published on [hub.docker.io](https://hub.docker.com/r/eugenmayer/portus/)
+For now, only planed to be published on [hub.docker.io](https://hub.docker.com/r/denverj/portus/)
 
 ## Test
 

@@ -6,7 +6,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: "doesnotmatter"
   portus:
-    image: eugenmayer/portus:2.4-rc8
+    image: denverj/portus:2.1.1
     container_name: portus
     build:
       context: .
@@ -54,6 +54,7 @@ services:
       PORTUS_LDAP_GUESS_EMAIL_ATTR: mail
       PORTUS_REGISTRY_JWT_EXIRATION_TIME: 30
       RAILS_ENV: 'development'
+      SSL_CERT_FILE: /certs/fullchain.pem
     volumes:
       - ./test/certs:/certs
     depends_on:
