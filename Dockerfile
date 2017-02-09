@@ -4,7 +4,7 @@ ENV CATALOG_CRON="5.minutes"
 ENV COMPOSE=1
 EXPOSE 3000
 
-RUN git clone https://github.com/SUSE/Portus.git --single-branch --branch 2.1.1 --depth 1  portus
+RUN git clone https://github.com/SUSE/Portus.git --single-branch --branch 2.1.1 --depth 1  portus \
  && cd portus \
  && bundle install --retry=3 && bundle binstubs phantomjs \
  && apt-get update \
